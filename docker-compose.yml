@@ -1,0 +1,7 @@
+version: '3.5'
+
+services:
+    bx-notebook:
+        build: .
+        ports:
+            - '8888:8888'
