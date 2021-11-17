@@ -2,6 +2,11 @@
 
 The code examples and exercises are written in jupyter notebook pages.
 
+To use `bx` with testnet, do this at the top of a Jupyter notebook:
+```bash
+export BX_CONFIG="../bx_config_files/bx_testnet.cfg"
+```
+
 It is highly recommended to install [Vagrant](https://www.vagrantup.com/downloads.html), and then run the code repository directly from the VM instance managed by Vagrant. To do so, go to the `code-demos` repository, and `vagrant up` to automatically setup an Ubuntu instance with Libbitcoin BX and jupyter notebook. To access the VM instance, simply `vagrant ssh` afterwards. Please run `jupyter notebook --ip 0.0.0.0` so the jupyter notebook server port can be forwarded to your host machine.
 
 To run the cpp examples in this repository, you will need an alternative setup. To do so, please follow the steps below.
